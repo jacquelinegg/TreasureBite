@@ -321,7 +321,7 @@ function render(){G=build();const d=D(),sc=G.sc,wk=dateAt(off-wdOf(dateAt(off)))
  if(d.res&&G.key==fmt(dateAt(0)))h+='<button id="vr">View result</button> ';
  if(cnt>=5&&!st.chest[wkKey])h+='<button id="ch">Open weekly chest</button>';else if(st.chest[wkKey])h+='<p class="win">Weekly chest opened.</p>';
  if(d.res)h+='<button id="sh">Copy result</button>';$('end').innerHTML=h;const vr=$('vr');if(vr)vr.onclick=()=>{closeSheet();showResult()};const pc=$('pic');if(pc)art(sc.w,pc.getContext('2d'));pop=0;album();const sh=$('sh');if(sh)sh.onclick=share;const ch=$('ch');if(ch)ch.onclick=()=>{if(st.chest[wkKey])return;st.coins+=60;if(!st.own.includes(weeklyGhost.id))st.own.push(weeklyGhost.id);st.chest[wkKey]=weeklyGhost.id;note='Chest: +60 coins and '+weeklyGhost.n+' skin!';save();render()};
- shop()}
+ shop();sizeTodayPanel()}
 function closeSheet(){if(SH)SH.classList.remove('open');if(TB)[...TB.children].forEach(x=>x.classList.remove('on'))}
 function untilReset(){const p=new Intl.DateTimeFormat('en-GB',{timeZone:USER_TZ,hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23'}).formatToParts(new Date()),n=t=>Number(p.find(x=>x.type==t).value),s=86400-(n('hour')*3600+n('minute')*60+n('second')),z=v=>String(v).padStart(2,'0');return z(Math.floor(s/3600))+':'+z(Math.floor(s%3600/60))+':'+z(s%60)}
 function fillBoard(){
