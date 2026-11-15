@@ -31,7 +31,7 @@
   "menu": {
     "items": [
       {
-        "label": "New Pixel Treasure Hunt post",
+        "label": "New TreasureBite post",
         "description": "Create a playable game post in this subreddit",
         "location": "subreddit",
         "forUserType": "moderator",

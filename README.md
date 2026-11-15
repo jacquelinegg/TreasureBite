@@ -1,6 +1,6 @@
-# Pixel Treasure Hunt
+# TreasureBite
 
-Pixel Treasure Hunt is a daily pixel-art exploration game built with Devvit Web. Explore a procedurally arranged map, dig up letters, avoid traps, and guess the hidden word. A new daily challenge gives players a reason to return, while a collection, streaks, and a leaderboard track longer-term progress.
+TreasureBite is a daily pixel-art exploration game built with Devvit Web. Explore a procedurally arranged map, dig up letters, avoid traps, and guess the hidden word. A new daily challenge gives players a reason to return, while a collection, streaks, and a leaderboard track longer-term progress.
 
 ## Features
 
@@ -49,7 +49,7 @@ Pixel Treasure Hunt is a daily pixel-art exploration game built with Devvit Web.
 
    Follow the CLI prompts to select a subreddit. The configured development subreddit in `devvit.json` is `treasurebite_dev`; update it if you use a different test community.
 
-5. In the test subreddit, install the app if needed and create a game post using the moderator menu item **New Pixel Treasure Hunt post**. The app also creates an initial post when installed.
+5. In the test subreddit, install the app if needed and create a game post using the moderator menu item **New TreasureBite post**. The app also creates an initial post when installed.
 
 To upload a new app version to Devvit, run:
 

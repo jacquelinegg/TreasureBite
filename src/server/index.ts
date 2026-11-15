@@ -186,7 +186,7 @@ router.post('/internal/scheduler/daily-post', async (_req, res) => {
     const day = gameDay();
     const k = `pth:dailypost:${day}`;
     if (await redis.get(k)) return res.json({ status: 'success', message: 'Already posted today' });
-    const post = await createGamePost(`Pixel Treasure Hunt \u00b7 ${prettyDay()}`);
+    const post = await createGamePost(`TreasureBite \u00b7 ${prettyDay()}`);
     await redis.set(k, post.id);
     await redis.expire(k, 3 * 24 * 3600);
     res.json({ status: 'success', message: `Created ${post.id}` });
